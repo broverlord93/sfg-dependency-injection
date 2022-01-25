@@ -14,7 +14,7 @@ public class SfgDependencyInjectionApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(SfgDependencyInjectionApplication.class, args);
 
-		PetController petController = ctx.getBean("petController", PetController.class);
+		PetController petController = (PetController) ctx.getBean("petController");
 		System.out.println("--- The Best Pet is ---");
 		System.out.println(petController.whichPetIsTheBest());
 
