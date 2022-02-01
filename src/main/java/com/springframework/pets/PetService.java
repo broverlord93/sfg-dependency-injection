@@ -1,4 +1,4 @@
-package guru.springframework.sfgdependencyinjection.services;
+package com.springframework.pets;
 
 
 /**

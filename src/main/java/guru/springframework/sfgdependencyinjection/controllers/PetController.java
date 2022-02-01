@@ -1,6 +1,6 @@
 package guru.springframework.sfgdependencyinjection.controllers;
 
-import guru.springframework.sfgdependencyinjection.services.PetService;
+import com.springframework.pets.PetService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
@@ -12,7 +12,7 @@ public class PetController {
 
     private final PetService petService;
 
-    public PetController(@Qualifier("PetService") PetService petService){
+    public PetController(PetService petService){
         this.petService = petService;
     }
 

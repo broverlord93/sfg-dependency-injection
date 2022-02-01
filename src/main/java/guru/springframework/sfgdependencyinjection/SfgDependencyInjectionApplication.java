@@ -4,10 +4,12 @@ import guru.springframework.sfgdependencyinjection.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 
 import java.util.Set;
 
+@ComponentScan({"guru.springframework.sfgdependencyinjection", "com.springframework.pets"})
 @SpringBootApplication
 public class SfgDependencyInjectionApplication {
 

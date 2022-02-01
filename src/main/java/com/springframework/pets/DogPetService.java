@@ -1,6 +1,5 @@
-package guru.springframework.sfgdependencyinjection.services;
+package com.springframework.pets;
 
-import guru.springframework.sfgdependencyinjection.services.PetService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -8,7 +7,7 @@ import org.springframework.stereotype.Service;
  * Created by jt on 12/28/19.
  */
 @Profile({"dog", "default"})
-@Service("PetService")
+@Service
 public class DogPetService implements PetService {
     @Override
     public String getPetType(){
