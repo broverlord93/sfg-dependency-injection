@@ -1,6 +1,7 @@
 package guru.springframework.sfgdependencyinjection;
 
 import guru.springframework.sfgdependencyinjection.config.SfgConfiguration;
+import guru.springframework.sfgdependencyinjection.config.SfgConstructorConfig;
 import guru.springframework.sfgdependencyinjection.controllers.*;
 import guru.springframework.sfgdependencyinjection.datasource.FakeDataSource;
 import guru.springframework.sfgdependencyinjection.services.PrototypeBean;
@@ -76,6 +77,12 @@ public class SfgDependencyInjectionApplication {
 		System.out.println(sfgConfiguration.getUsername());
 		System.out.println(sfgConfiguration.getPassword());
 		System.out.println(sfgConfiguration.getJdbcurl());
+
+		System.out.println("---------Constructor Binding--------");
+		SfgConstructorConfig sfgConstructorConfig = ctx.getBean(SfgConstructorConfig.class);
+		System.out.println(sfgConstructorConfig.getUsername());
+		System.out.println(sfgConstructorConfig.getUsername());
+		System.out.println(sfgConstructorConfig.getJdbcurl());
 
 	}
 
