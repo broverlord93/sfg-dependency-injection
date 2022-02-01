@@ -1,0 +1,11 @@
+#guru.username=superuser
+#guru.password=dbPassword
+#guru.jdbcurl=someUrlForDb
+
+spring:
+  profiles:
+    active: dog, EN
+guru:
+  username: YmlUserName
+  password: YmlPassword
+  jdbcurl: YmlUrl
