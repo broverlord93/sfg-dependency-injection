@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 
 import java.util.Set;
 
-@ComponentScan({"guru.springframework.sfgdependencyinjection", "com.springframework.pets"})
 @SpringBootApplication
 public class SfgDependencyInjectionApplication {
 
