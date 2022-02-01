@@ -1,6 +1,7 @@
 package guru.springframework.sfgdependencyinjection;
 
 import guru.springframework.sfgdependencyinjection.controllers.*;
+import guru.springframework.sfgdependencyinjection.datasource.FakeDataSource;
 import guru.springframework.sfgdependencyinjection.services.PrototypeBean;
 import guru.springframework.sfgdependencyinjection.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
@@ -63,6 +64,10 @@ public class SfgDependencyInjectionApplication {
 		PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
 		System.out.println(prototypeBean2.getMyScope());
 
+		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+		System.out.println(fakeDataSource.getUsername());
+		System.out.println(fakeDataSource.getPassword());
+		System.out.println(fakeDataSource.getJdbcurl());
 	}
 
 }
