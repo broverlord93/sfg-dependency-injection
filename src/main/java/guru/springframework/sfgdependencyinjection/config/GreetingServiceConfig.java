@@ -9,7 +9,6 @@ import guru.springframework.sfgdependencyinjection.services.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
-@PropertySource("classpath:datasource.properties")
 @ImportResource("classpath:sfgdependencyinjection-config.xml")
 @Configuration
 public class GreetingServiceConfig {
