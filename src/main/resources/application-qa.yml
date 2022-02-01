@@ -1,0 +1,8 @@
+#  guru.username=QADBUser
+#  guru.password=QAPassword
+#  guru.jdbcurl=URLforQADB
+
+guru:
+  username: YmlQAUserName
+  password: YmlQAPassword
+  jdbcurl: YmlQAUrl
